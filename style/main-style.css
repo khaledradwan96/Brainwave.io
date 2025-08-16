@@ -173,3 +173,17 @@ header a.navbar-brand {
     transform: translateX(15px);
   }
 }
+
+/* ========== Testimonial  ========== */
+.testimonial {
+  margin-block: 3rem;
+  /* padding-inline: 15rem; */
+}
+.stars i {
+  color: #fcad38;
+}
+
+.testimonial p {
+  margin-block: 1rem;
+  font-size: 24px;
+}
