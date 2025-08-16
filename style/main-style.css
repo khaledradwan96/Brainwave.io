@@ -39,6 +39,7 @@ body {
 .btn-style:hover {
   background-color: #3a2ed0;
 }
+
 /* ========== Header ========== */
 header {
   padding-block: 15px;
@@ -88,4 +89,87 @@ header a.navbar-brand {
 .hero-image span:nth-of-type(3) {
   bottom: 30px;
   right: 20%;
+}
+
+/* ========== Services ==========   */
+.services-heading {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 589px;
+}
+.services-heading p {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 45px;
+}
+
+.card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.5rem;
+  color: #ffffff;
+  border: none;
+}
+.card.card-one {
+  background-color: #68d585;
+}
+.card.card-two {
+  background-color: #473bf0;
+}
+.card.card-three {
+  background-color: #f64b4b;
+  position: relative;
+}
+.card.card-three::after {
+  background-image: url("../assets/icons/Group101.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+  width: 171px;
+  height: 80px;
+  z-index: -1;
+}
+
+.card img {
+  height: 133px;
+}
+
+.card h5 {
+  margin-block: 1rem;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.card p {
+  opacity: 65%;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.card a {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.card a::after {
+  content: "→";
+  display: inline-block;
+  margin-left: 8px;
+}
+.card a:hover::after {
+  animation: arrow-move 0.7s infinite alternate;
+}
+@keyframes arrow-move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(15px);
+  }
 }
