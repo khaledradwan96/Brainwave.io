@@ -20,10 +20,72 @@ body {
   font-size: 15px;
 }
 
+.main-title {
+  color: #f64b4b;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+}
+.btn-style {
+  background-color: #473bf0;
+  padding: 13px 23px;
+  border-radius: 8px;
+  color: #ffff;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.btn-style:hover {
+  background-color: #3a2ed0;
+}
 /* ========== Header ========== */
-
+header {
+  padding-block: 15px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
 header a.navbar-brand {
   font-family: "Rubik", sans-serif;
   font-weight: bold;
   font-size: 24px;
+}
+
+/* ========== Home ========== */
+.home {
+  background-image: url("../assets/images/Bitmap.png");
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-text h2 {
+  font-size: 60px;
+}
+.hero-text p {
+  font-size: 19px;
+  margin-bottom: 30px;
+}
+
+.hero-image {
+  position: relative;
+}
+.hero-image span {
+  position: absolute;
+}
+.hero-image span:nth-of-type(1) {
+  top: 10px;
+  left: 15%;
+  z-index: -1;
+}
+.hero-image span:nth-of-type(2) {
+  bottom: 10px;
+  left: 15%;
+}
+.hero-image span:nth-of-type(3) {
+  bottom: 30px;
+  right: 20%;
 }
