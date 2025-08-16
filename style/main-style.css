@@ -187,3 +187,11 @@ header a.navbar-brand {
   margin-block: 1rem;
   font-size: 24px;
 }
+
+/* ========== Our Story  ========== */
+.story p {
+  font-size: 36px;
+  font-weight: bold;
+  max-width: 515px;
+  line-height: 1;
+}
